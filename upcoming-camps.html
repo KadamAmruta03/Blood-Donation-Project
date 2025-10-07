@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Blood Donation Camps</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Big container for all hospital info */
+    .main-container {
+  max-width: 1200px;
+  margin: 0 auto; /* removed 30px top margin */
+  padding: 40px;
+  background: linear-gradient(135deg, #fff8f0, #ffe6d6);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.main-container h2 {
+  margin-top: 0; /* remove extra top margin */
+  margin-bottom: 10px; /* optional, keep spacing below */
+}
+
+
+    /* Grid layout inside the container */
+    .camp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0; /* borders separate cells */
+    }
+
+    .camp {
+      padding: 15px;
+      border-right: 2px solid #57071e;
+      border-bottom: 2px solid #57071e;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    /* Remove right border for last column */
+    .camp:nth-child(3n) { border-right: none; }
+
+    /* Remove bottom border for last row */
+    .camp:nth-last-child(-n+3) { border-bottom: none; }
+
+    .camp h3 {
+      color: #57071e;
+      margin-bottom: 6px;
+      font-size: 18px;
+    }
+
+    .camp p { margin: 3px 0; }
+
+    .label { font-weight: bold; color: #8b1435; }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 1024px) {
+      .camp-grid { grid-template-columns: repeat(2, 1fr); }
+      .camp:nth-child(2n) { border-right: none; }
+      .camp:nth-last-child(-n+2) { border-bottom: none; }
+    }
+
+    @media screen and (max-width: 700px) {
+      .camp-grid { grid-template-columns: 1fr; }
+      .camp { border-right: none; border-bottom: 2px solid #57071e; }
+      .camp:last-child { border-bottom: none; }
+    }
+
+    /* Back button styling */
+    .back-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: palegoldenrod;
+      color: #57071e;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      background-color: #e0c065;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header same as index.html -->
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <h1>Blood Donation Campaign</h1>
+      </div>
+      <div class="header-right">
+        <a href="index.html" class="back-btn">Back</a>
+      </div>
+    </div>
+  </header>
+
+  <marquee behavior="scroll" direction="left" style="color: #7D0D2C; font-weight: bold; font-size: 18px;">
+    🩸 Donate Blood, Save Lives! Your contribution can save someone's life. Join us in this noble cause. 🩸
+  </marquee>
+
+  <div class="main-container">
+    <h2 style="color:#57071e; text-align:center; margin-bottom:20px;">UPCOMING BLOOD DONATION CAMPS</h2>
+    <hr style="border: 1px solid #e0c065; width: 1200px; margin: 10px auto;">
+
+    <div class="camp-grid">
+      <!-- Tata Memorial Hospital, Parel -->
+      <div class="camp">
+        <h3>Tata Memorial Hospital, Parel</h3>
+        <p><span class="label">Event Title/Name:</span> Community Health Drive</p>
+        <p><span class="label">Date:</span> Saturday, Nov 2</p>
+        <p><span class="label">Time:</span> 10:00 AM - 4:00 PM</p>
+        <p><span class="label">Location/Venue:</span> Tata Memorial Hospital Main Hall</p>
+        <p><span class="label">Address:</span> Parel, Mumbai</p>
+        <p><span class="label">Registration:</span> Walk-ins welcome</p>
+        <p><span class="label">Eligibility:</span> Donors must be 18+, weigh 50kg, bring photo ID</p>
+        <p><span class="label">Organizer/Sponsor:</span> Rotary Club</p>
+        <p><span class="label">Special Instructions:</span> Light meal before donating</p>
+      </div>
+
+      <!-- KEM Hospital, Parel -->
+      <div class="camp">
+        <h3>KEM Hospital, Parel</h3>
+        <p><span class="label">Event Title/Name:</span> Spring Bloodmobile</p>
+        <p><span class="label">Date:</span> Sunday, Nov 3</p>
+        <p><span class="label">Time:</span> 9:00 AM - 3:00 PM</p>
+        <p><span class="label">Location/Venue:</span> KEM Hospital Auditorium</p>
+        <p><span class="label">Address:</span> Parel, Mumbai</p>
+        <p><span class="label">Registration:</span> Register online</p>
+        <p><span class="label">Eligibility:</span> Donors must be 18+, weigh 50kg, bring photo ID</p>
+        <p><span class="label">Organizer/Sponsor:</span> Hospital Staff</p>
+        <p><span class="label">Special Instructions:</span> Free refreshments provided</p>
+      </div>
+
+      <!-- Wadia Hospital for Children, Parel -->
+      <div class="camp">
+        <h3>Wadia Hospital for Children, Parel</h3>
+        <p><span class="label">Event Title/Name:</span> Pediatric Health Drive</p>
+        <p><span class="label">Date:</span> Monday, Nov 4</p>
+        <p><span class="label">Time:</span> 11:00 AM - 5:00 PM</p>
+        <p><span class="label">Location/Venue:</span> Wadia Hospital Hall</p>
+        <p><span class="label">Address:</span> Parel, Mumbai</p>
+        <p><span class="label">Registration:</span> Walk-ins welcome</p>
+        <p><span class="label">Eligibility:</span> Donors must be 18+, weigh 50kg, bring photo ID</p>
+        <p><span class="label">Organizer/Sponsor:</span> NGO Support</p>
+        <p><span class="label">Special Instructions:</span> Light meal recommended</p>
+      </div>
+
+      <!-- Hinduja Hospital, Andheri -->
+      <div class="camp">
+        <h3>Hinduja Hospital, Andheri</h3>
+        <p><span class="label">Event Title/Name:</span> Urban Blood Drive</p>
+        <p><span class="label">Date:</span> Wed, Nov 6</p>
+        <p><span class="label">Time:</span> 10:00 AM - 4:00 PM</p>
+        <p><span class="label">Location/Venue:</span> Hinduja Hospital Auditorium</p>
+        <p><span class="label">Address:</span> Andheri, Mumbai</p>
+        <p><span class="label">Registration:</span> Register online</p>
+        <p><span class="label">Eligibility:</span> Donors must be 18+, weigh 50kg, bring photo ID</p>
+        <p><span class="label">Organizer/Sponsor:</span> Blood Bank Society</p>
+        <p><span class="label">Special Instructions:</span> Free refreshments provided</p>
+      </div>
+
+      <!-- Kokilaben Dhirubhai Hospital, Andheri -->
+      <div class="camp">
+        <h3>Kokilaben Dhirubhai Hospital, Andheri</h3>
+        <p><span class="label">Event Title/Name:</span> Corporate Blood Donation Drive</p>
+        <p><span class="label">Date:</span> Fri, Nov 8</p>
+        <p><span class="label">Time:</span> 9:00 AM - 3:00 PM</p>
+        <p><span class="label">Location/Venue:</span> Kokilaben Hospital Conference Hall</p>
+        <p><span class="label">Address:</span> Andheri, Mumbai</p>
+        <p><span class="label">Registration:</span> Register online</p>
+        <p><span class="label">Eligibility:</span> Donors must be 18+, weigh 50kg, bring photo ID</p>
+        <p><span class="label">Organizer/Sponsor:</span> Corporate Social Responsibility Team</p>
+        <p><span class="label">Special Instructions:</span> Light meal recommended</p>
+      </div>
+
+      <!-- Nanavati Hospital, Vile Parle -->
+      <div class="camp">
+        <h3>Nanavati Hospital, Vile Parle</h3>
+        <p><span class="label">Event Title/Name:</span> Community Blood Drive</p>
+        <p><span class="label">Date:</span> Sun, Nov 10</p>
+        <p><span class="label">Time:</span> 10:00 AM - 4:00 PM</p>
+        <p><span class="label">Location/Venue:</span> Nanavati Hospital Main Hall</p>
+        <p><span class="label">Address:</span> Vile Parle, Mumbai</p>
+        <p><span class="label">Registration:</span> Walk-ins welcome</p>
+        <p><span class="label">Eligibility:</span> Donors must be 18+, weigh 50kg, bring photo ID</p>
+        <p><span class="label">Organizer/Sponsor:</span> Hospital Staff</p>
+        <p><span class="label">Special Instructions:</span> Free refreshments provided</p>
+      </div>
+
+      <!-- Bombay Hospital, Bandra -->
+      <div class="camp">
+        <h3>Bombay Hospital, Bandra</h3>
+        <p><span class="label">Event Title/Name:</span> Annual Blood Donation Camp</p>
+        <p><span class="label">Date:</span> Tue, Nov 12</p>
+        <p><span class="label">Time:</span> 9:00 AM - 3:00 PM</p>
+        <p><span class="label">Location/Venue:</span> Bombay Hospital Auditorium</p>
+        <p><span class="label">Address:</span> Bandra, Mumbai</p>
+        <p><span class="label">Registration:</span> Register online</p>
+        <p><span class="label">Eligibility:</span> Donors must be 18+, weigh 50kg, bring photo ID</p>
+        <p><span class="label">Organizer/Sponsor:</span> Rotary Club</p>
+        <p><span class="label">Special Instructions:</span> Light meal recommended</p>
+      </div>
+
+      <!-- SevenHills Hospital, Andheri -->
+      <div class="camp">
+        <h3>SevenHills Hospital, Andheri</h3>
+        <p><span class="label">Event Title/Name:</span> City Blood Drive</p>
+        <p><span class="label">Date:</span> Thu, Nov 14</p>
+        <p><span class="label">Time:</span> 10:00 AM - 4:00 PM</p>
+        <p><span class="label">Location/Venue:</span> SevenHills Hospital Hall</p>
+        <p><span class="label">Address:</span> Andheri, Mumbai</p>
+        <p><span class="label">Registration:</span> Walk-ins welcome</p>
+        <p><span class="label">Eligibility:</span> Donors must be 18+, weigh 50kg, bring photo ID</p>
+        <p><span class="label">Organizer/Sponsor:</span> NGO Support</p>
+        <p><span class="label">Special Instructions:</span> Free refreshments provided</p>
+      </div>
+
+      <!-- Bombay General Hospital, CSMT -->
+      <div class="camp">
+        <h3>Bombay General Hospital, CSMT</h3>
+        <p><span class="label">Event Title/Name:</span> Heritage Blood Drive</p>
+        <p><span class="label">Date:</span> Sat, Nov 16</p>
+        <p><span class="label">Time:</span> 11:00 AM - 5:00 PM</p>
+        <p><span class="label">Location/Venue:</span> Bombay General Hospital Hall</p>
+        <p><span class="label">Address:</span> CSMT, Mumbai</p>
+        <p><span class="label">Registration:</span> Walk-ins welcome</p>
+        <p><span class="label">Eligibility:</span> Donors must be 18+, weigh 50kg, bring photo ID</p>
+        <p><span class="label">Organizer/Sponsor:</span> Blood Bank Society</p>
+        <p><span class="label">Special Instructions:</span> Light meal recommended</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Blood Donation Campaign. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

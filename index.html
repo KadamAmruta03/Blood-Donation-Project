@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <h1>Blood Donation Campaign</h1>
+      </div>
+      <div class="header-right">
+        <button class="register-btn" onclick="showForm()">Register to Donate</button>
+      </div>
+    </div>
+  </header>
+
+  <marquee behavior="scroll" direction="left" style="color: #7D0D2C; font-weight: bold; font-size: 18px;">
+    🩸 Donate Blood, Save Lives! Your contribution can save someone's life. Join us in this noble cause. 🩸
+  </marquee>
+
+  <!-- Cards Section -->
+  <div class="cards">
+    <div class="card" onclick="openInNewTab('why-donate.html')">
+      <img src="donation.jpg" alt="Blood Donation Image">
+      <div class="card-content">
+        <h3>Why Donate Blood?</h3>
+        <p>Donating blood helps patients in need and improves your own health.</p>
+      </div>
+    </div>  
+    <div class="card" onclick="openInNewTab('success-stories.html')">
+      <img src="success.jpg" alt="Success Stories">
+      <div class="card-content">
+        <h3>Success Stories</h3>
+        <p>Read inspiring stories of lives saved through blood donation.</p>
+      </div>
+    </div>
+    <div class="card" onclick="openInNewTab('upcoming-camps.html')">
+      <img src="camp.jpg" alt="Blood Donation Camp">
+      <div class="card-content">
+        <h3>Upcoming Camps</h3>
+        <p>Find a blood donation camp near you and make a difference.</p>
+      </div>
+    </div> 
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="faq-horizontal">
+    <div class="faq-tabs">
+      <button class="faq-tab active" data-tab="1">Did You Know?</button>
+      <button class="faq-tab" data-tab="2">Who Can Donate?</button>
+      <button class="faq-tab" data-tab="3">Benefits</button>
+      <button class="faq-tab" data-tab="4">Tips Before Donation</button>
+      <button class="faq-tab" data-tab="5">Safety & Care</button>
+    </div>
+    <div class="faq-panels">
+      <div class="faq-panel active" data-panel="1">
+        <ul>
+          <li>One blood donation can save up to 3 lives.</li>
+          <li>Blood cannot be manufactured; it comes only from donors.</li>
+          <li>Every 2 seconds, someone needs blood.</li>
+          <li>Only about 3% of eligible donors donate regularly.</li>
+          <li>Blood components (red cells, platelets, plasma) help different patients.</li>
+          <li>Blood donation is safe even if slightly anemic (after doctor approval).</li>
+          <li>Plasma helps burn victims and cancer patients.</li>
+          <li>Platelets help patients undergoing chemotherapy.</li>
+          <li>Blood donation improves community health awareness.</li>
+          <li>Donors receive a mini health checkup each donation.</li>
+        </ul>
+      </div>
+      <div class="faq-panel" data-panel="2">
+        <ul>
+          <li>Age: 18–65 years.</li>
+          <li>Weight: minimum 50 kg.</li>
+          <li>Must be in good health.</li>
+          <li>No fever or infection on donation day.</li>
+          <li>Not pregnant or lactating.</li>
+          <li>No tattoos/piercings in last 6 months.</li>
+          <li>Chronic illness or certain travel may defer donation.</li>
+          <li>Blood pressure & hemoglobin in normal range.</li>
+          <li>Whole blood donation interval: 3 months (men)/4 months (women).</li>
+          <li>Consent to share personal/medical info with blood bank.</li>
+        </ul>
+      </div>
+      <div class="faq-panel" data-panel="3">
+        <ul>
+          <li>Saves lives in emergencies.</li>
+          <li>Reduces risk of iron overload.</li>
+          <li>Improves cardiovascular health.</li>
+          <li>Pre-donation check can detect hidden health issues.</li>
+          <li>Boosts emotional well-being & social responsibility.</li>
+          <li>Maintains healthy blood flow.</li>
+          <li>Platelet donation aids cancer patients.</li>
+          <li>Reduces risk of liver damage from excess iron.</li>
+          <li>Encourages healthy lifestyle habits.</li>
+          <li>Strengthens blood donor community.</li>
+        </ul>
+      </div>
+      <div class="faq-panel" data-panel="4">
+        <ul>
+          <li>Have a light, healthy meal before donation.</li>
+          <li>Avoid fatty foods prior.</li>
+          <li>Drink plenty of water.</li>
+          <li>Get adequate rest the night before.</li>
+          <li>Wear comfortable clothing with roll-up sleeves.</li>
+          <li>Bring a friend for support.</li>
+          <li>Inform staff about medications.</li>
+          <li>Stay calm and relaxed during donation.</li>
+          <li>Know your blood type if possible.</li>
+          <li>Avoid alcohol/smoking 24 hours before donation.</li>
+        </ul>
+      </div>
+      <div class="faq-panel" data-panel="5">
+        <ul>
+          <li>All equipment is sterile and disposable.</li>
+          <li>Sit or lie down if feeling dizzy.</li>
+          <li>Drink fluids & eat snacks after donation.</li>
+          <li>Avoid heavy exercise for the rest of the day.</li>
+          <li>Apply pressure if bleeding persists.</li>
+          <li>Track donation dates to prevent over-donation.</li>
+          <li>Report unusual symptoms to blood bank.</li>
+          <li>Rest properly after donation.</li>
+          <li>Follow staff instructions post-donation.</li>
+          <li>Encourage others to donate safely.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blood Donation Process -->
+  <div class="donation-process">
+    <h2>Blood Donation Process</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>Step 1: Registration</h3>
+        <p>Provide your basic details and medical history.</p>
+      </div>
+      <div class="step">
+        <h3>Step 2: Health Check-up</h3>
+        <p>A doctor will check your blood pressure, pulse, and hemoglobin levels.</p>
+      </div>
+      <div class="step">
+        <h3>Step 3: Donation</h3>
+        <p>The donation process takes about 10–15 minutes.</p>
+      </div>
+      <div class="step">
+        <h3>Step 4: Rest & Refreshment</h3>
+        <p>Enjoy some juice and snacks while you relax.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Registration Form Overlay -->
+  <div class="form-overlay" id="form-overlay" style="display:none;">
+    <div class="form-container">
+      <button class="close-btn" onclick="closeForm()">X</button>
+      <form id="registrationForm" onsubmit="submitForm(event)">
+        <h4 class="form1">REGISTER TO DONATE</h4>
+
+        <label for="name"><b>Full Name:</b></label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="age"><b>Age:</b></label>
+        <input type="number" id="age" placeholder="Enter your age" required>
+
+        <label><b>Gender:</b></label>
+        <div class="gender-row">
+          <label><input type="checkbox" name="gender" value="Male"> Male</label>
+          <label><input type="checkbox" name="gender" value="Female"> Female</label>
+          <label><input type="checkbox" name="gender" value="Other"> Other</label>
+        </div>
+
+        <label for="phone"><b>Phone Number:</b></label>
+        <input type="text" id="phone" placeholder="Enter your phone number" required>
+
+        <label for="email"><b>Email Address:</b></label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+
+        <label for="address"><b>Address:</b></label>
+        <textarea id="address" placeholder="Enter your full address" required></textarea>
+
+        <label><b>Blood Group:</b></label>
+        <div class="blood-row">
+          <label><input type="checkbox" name="blood-group" value="A+"> A+</label>
+          <label><input type="checkbox" name="blood-group" value="A-"> A-</label>
+          <label><input type="checkbox" name="blood-group" value="B+"> B+</label>
+          <label><input type="checkbox" name="blood-group" value="B-"> B-</label>
+          <label><input type="checkbox" name="blood-group" value="AB+"> AB+</label>
+          <label><input type="checkbox" name="blood-group" value="AB-"> AB-</label>
+          <label><input type="checkbox" name="blood-group" value="O+"> O+</label>
+          <label><input type="checkbox" name="blood-group" value="O-"> O-</label>
+        </div>
+
+        <label for="weight"><b>Weight (kg):</b></label>
+        <input type="number" id="weight" placeholder="Enter your weight" required>
+
+        <label><b>Any recent illnesses or medications?</b></label>
+        <div class="illness-row">
+          <label><input type="checkbox" name="illness" value="Yes"> Yes</label>
+          <label><input type="checkbox" name="illness" value="No"> No</label>
+          <input type="text" id="illness-details" placeholder="If yes, please specify">
+        </div>
+
+        <label><b>Have you donated blood before?</b></label>
+        <div class="donated-row">
+          <label><input type="checkbox" name="donated" value="Yes" onclick="handleDonatedCheckbox(this)"> Yes</label>
+          <label><input type="checkbox" name="donated" value="No" onclick="handleDonatedCheckbox(this)"> No</label>
+        </div>
+
+        <div id="last-donation-container" style="display:none;">
+          <label for="last-donation"><b>Date of Last Blood Donation:</b></label>
+          <input type="date" id="last-donation">
+        </div>
+
+        <p><b>Select Hospital:</b></p>
+        <div class="hospital-list">
+          <label><input type="checkbox" name="hospital" value="Tata Memorial Hospital, Parel"> Tata Memorial Hospital, Parel</label>
+          <label><input type="checkbox" name="hospital" value="KEM Hospital, Parel"> KEM Hospital, Parel</label>
+          <label><input type="checkbox" name="hospital" value="Wadia Hospital for Children, Parel"> Wadia Hospital for Children, Parel</label>
+          <label><input type="checkbox" name="hospital" value="Hinduja Hospital, Andheri"> Hinduja Hospital, Andheri</label>
+          <label><input type="checkbox" name="hospital" value="Kokilaben Dhirubhai Hospital, Andheri"> Kokilaben Dhirubhai Hospital, Andheri</label>
+          <label><input type="checkbox" name="hospital" value="Nanavati Hospital, Vile Parle"> Nanavati Hospital, Vile Parle</label>
+          <label><input type="checkbox" name="hospital" value="Bombay Hospital, Bandra"> Bombay Hospital, Bandra</label>
+          <label><input type="checkbox" name="hospital" value="SevenHills Hospital, Andheri"> SevenHills Hospital, Andheri</label>
+          <label><input type="checkbox" name="hospital" value="Bombay General Hospital, CSMT"> Bombay General Hospital, CSMT</label>
+        </div>
+
+        <p><b>Consent:</b></p>
+        <div class="consent-row">
+          <label>
+            <input type="checkbox" name="consent" value="Yes" required>
+            I confirm that I am fit to donate blood, I agree to share my information with the hospital/blood bank, and I consent to receive future blood donation notifications.
+          </label>
+        </div>
+
+        <button type="submit" class="register-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Blood Donation Campaign. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
