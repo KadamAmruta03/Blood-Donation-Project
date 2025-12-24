@@ -1,4 +1,4 @@
-const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwJsq7Mg8mUtLPPCyLGUwBYIYk8H6IbW_sqpzvMZE2U6t8oVNIEutsf7QgmZUgL4XxXbA/exec"; // Replace with your Google Apps Script Web App URL
+const GOOGLE_SHEET_URL = ""https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLg0PmZu0iPaKty6Znq60eNpxJbC-uvVZHnWlVRrLOj_oFzPUcyZfY-y6dmJVblmOvijNQp0U_BnKdmi46JXKVf7QZLC6-MxUtHO2t0FxiIw2T0hMIJU4LnzxyI5wp6LlXhiEu1mWopoMhqeHdzkKE9iGWWenqFYaGEScauixoPJNX3XEGNCvvvw8DbRgJ33RIlVbAcWX1xvVCBEPhVGOfSuOzvIIM1MOeCqI56YvAcMxmz80VLxAo3IpZ_D5jwAJuyb9tuTtgQgcRxaPMMkd459SmboqL51zNyW5bHv&lib=M-826UwQ-C-LTYV61ILXFjcVzyiTEGIq-; // Replace with your Google Apps Script Web App URL
 
 // --- Custom Alert ---
 function showCustomAlert(message) {
@@ -156,3 +156,4 @@ async function submitForm(event){
 
 // --- Open Cards ---
 function openInNewTab(url){ window.open(url,"_blank"); }
+
